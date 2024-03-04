@@ -396,6 +396,70 @@ body {
 }
 
 .portfolio {
-  background: #081b29;
   height: 100vh;
+  background: #081b29;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 10%;
+}
+
+.portfolio-head {
+  font-size: 25px;
+  margin: 32px 0 64px 30px;
+}
+
+.portfolio-content {
+  display: flex;
+  column-gap: 64px;
+}
+
+.portfolio-info {
+  border-left: 2px solid #00abf0;
+}
+
+.portfolio-info * {
+  margin-left: 27px;
+}
+
+.portfolio-info a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 195px;
+  height: 50px;
+  margin-top: 10px;
+  background: #081b29;
+  border: 2px solid #00abf0;
+  border-radius: 8px;
+  font-size: 19px;
+  color: #00abf0;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.portfolio-info a:hover {
+  color: #081b29;
+}
+
+.portfolio-info a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #00abf0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.portfolio-info a:hover::before {
+  width: 100%;
 }
