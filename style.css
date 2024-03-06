@@ -425,16 +425,17 @@ body {
 
 .portfolio-info a {
   position: relative;
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-  width: 195px;
-  height: 50px;
+  width: 115px;
+  height: 45px;
   margin-top: 10px;
+  padding-right: 24px;
   background: #081b29;
   border: 2px solid #00abf0;
   border-radius: 8px;
-  font-size: 19px;
+  font-size: 18px;
   color: #00abf0;
   text-decoration: none;
   font-weight: 600;
@@ -442,6 +443,10 @@ body {
   z-index: 1;
   overflow: hidden;
   transition: 0.5s;
+}
+
+.portfolio-info a i {
+  margin-right: 5px;
 }
 
 .portfolio-info a:hover {
@@ -462,4 +467,71 @@ body {
 
 .portfolio-info a:hover::before {
   width: 100%;
+}
+
+.timeline {
+  height: 100vh;
+  background: #112e42;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.timeline .timeline-row {
+  display: flex;
+  column-gap: 64px;
+  margin-top: 75px;
+}
+
+.timeline-column .title {
+  font-size: 28px;
+}
+
+.timeline-box .timeline-content {
+  position: relative;
+  padding-left: 27px;
+  padding-top: 10px;
+  border-left: 2px solid #00abf0;
+}
+
+.timeline-box .timeline-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10.5px;
+  width: 20px;
+  height: 20px;
+  background: #00abf0;
+  border-radius: 50%;
+}
+
+.timeline-content .content {
+  padding: 10px;
+  border: 2px solid #00abf0;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+.timeline-content .content:hover {
+  background: #081b29;
+}
+
+.timeline-content .content .year {
+  font-size: 16px;
+  color: #00abf0;
+}
+
+.timeline-content .content .year i {
+  margin-right: 8px;
+}
+
+.timeline-content .content h3 {
+  font-size: 19px;
+  margin: 5px 0;
+}
+
+.timeline-content .content p {
+  font-size: 16px;
 }
