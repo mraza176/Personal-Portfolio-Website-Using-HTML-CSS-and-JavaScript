@@ -535,3 +535,113 @@ body {
 .timeline-content .content p {
   font-size: 16px;
 }
+
+.contact {
+  height: 100vh;
+  background: #081b29;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-content {
+  margin-top: 75px;
+}
+
+.contact h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contact form {
+  width: 600px;
+  text-align: center;
+}
+
+form .input-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-box .input-field {
+  width: 48.5%;
+}
+
+.field .item {
+  width: 100%;
+  padding: 18px;
+  background: transparent;
+  border: 2px solid #00abf0;
+  outline: none;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #ededed;
+  margin: 6px 0;
+}
+
+.field.error .item {
+  border-color: #d93025;
+}
+
+.field .item::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.field .error-txt {
+  font-size: 14.5px;
+  color: #d93025;
+  text-align: left;
+  margin: -5px 0 10px;
+  display: none;
+}
+
+.field.error .error-txt {
+  display: block;
+}
+
+form .textarea-field .item {
+  resize: none;
+}
+
+form .textarea-field .error-txt {
+  margin-top: -10px;
+}
+
+form button {
+  position: relative;
+  width: 175px;
+  height: 50px;
+  background: #081b29;
+  border: 2px solid #00abf0;
+  border-radius: 8px;
+  font-size: 18px;
+  color: #00abf0;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+form button:hover {
+  color: #081b29;
+}
+
+form button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #00abf0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+form button:hover::before {
+  width: 100%;
+}

@@ -20,7 +20,7 @@
         <a href="#timeline">Timeline</a>
         <a href="#contact">Contact Me</a>
       </nav>
-      <a href="#" class="sub">Subscription</a>
+      <a href="#services" class="sub">Subscription</a>
     </header>
     <section class="home" id="home">
       <div class="home-content">
@@ -33,8 +33,8 @@
           tempore repudiandae!
         </p>
         <div class="btn-box">
-          <a href="#">Hire Me</a>
-          <a href="#">Let's Talk</a>
+          <a href="#contact">Hire Me</a>
+          <a href="#contact">Let's Talk</a>
         </div>
       </div>
       <div class="home-sci">
@@ -219,5 +219,70 @@
         </div>
       </div>
     </section>
+    <section class="contact" id="contact">
+      <div class="contact-content">
+        <h2>Contact Me!</h2>
+        <form>
+          <div class="input-box">
+            <div class="input-field field">
+              <input
+                type="text"
+                placeholder="Full Name"
+                id="name"
+                class="item"
+                autocomplete="off"
+              />
+              <div class="error-txt">Full Name can't be empty</div>
+            </div>
+            <div class="input-field field">
+              <input
+                type="text"
+                placeholder="Email Address"
+                id="email"
+                class="item"
+                autocomplete="off"
+              />
+              <div class="error-txt">Email Address can't be empty</div>
+            </div>
+          </div>
+          <div class="input-box">
+            <div class="input-field field">
+              <input
+                type="text"
+                placeholder="Phone Number"
+                id="phone"
+                class="item"
+                autocomplete="off"
+              />
+              <div class="error-txt">Phone Number can't be empty</div>
+            </div>
+            <div class="input-field field">
+              <input
+                type="text"
+                placeholder="Subject"
+                id="subject"
+                class="item"
+                autocomplete="off"
+              />
+              <div class="error-txt">Subject can't be empty</div>
+            </div>
+          </div>
+          <div class="textarea-field field">
+            <textarea
+              name=""
+              id="message"
+              cols="30"
+              rows="5"
+              placeholder="Your Message"
+              class="item"
+              autocomplete="off"
+            ></textarea>
+            <div class="error-txt">Message can't be empty</div>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+    <script src="script.js"></script>
   </body>
 </html>
